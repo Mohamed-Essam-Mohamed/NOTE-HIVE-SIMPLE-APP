@@ -68,7 +68,6 @@ class HomeScreen extends StatelessWidget {
   void showModalAddTask(BuildContext context) {
     showModalBottomSheet(
       context: context,
-      elevation: 20,
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(20),
