@@ -1,6 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
-import 'package:app_note_local/src/feature/home/view/widget/note_item.dart';
+import 'package:app_note_local/src/feature/add_task/view/addtask_screen.dart';
 import 'package:app_note_local/src/feature/home/view/widget/notes_listview.dart';
 import 'package:app_note_local/src/utils/app_colors.dart';
 import 'package:app_note_local/src/utils/app_textstyles.dart';
@@ -48,6 +48,34 @@ class HomeScreen extends StatelessWidget {
           ],
         ),
       ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: AppColors.colorBlue,
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50),
+        ),
+        onPressed: () {
+          showModalAddTask(context);
+        },
+        child: Icon(
+          Icons.add,
+          color: AppColors.colorWite,
+          size: 30,
+        ),
+      ),
+    );
+  }
+
+  void showModalAddTask(BuildContext context) {
+    showModalBottomSheet(
+      context: context,
+      elevation: 20,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.only(
+          topLeft: Radius.circular(20),
+          topRight: Radius.circular(20),
+        ),
+      ),
+      builder: (context) => AddTaskScreen(),
     );
   }
 }

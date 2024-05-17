@@ -9,10 +9,12 @@ class NotesListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-        shrinkWrap: true,
-        itemCount: 10,
-        itemBuilder: (context, index) {
-          return const NoteItem();
-        });
+      padding: EdgeInsets.zero,
+      shrinkWrap: true,
+      itemCount: 10,
+      itemBuilder: (context, index) {
+        return const NoteItem();
+      },
+    );
   }
 }
