@@ -18,10 +18,10 @@ class AppMaterialButton extends StatelessWidget {
       minWidth: double.infinity,
       onPressed: onPressed,
       child: Padding(
-        padding: const EdgeInsets.all(10),
+        padding: const EdgeInsets.all(5),
         child: Text(
           title,
-          style: AppTextStyle.textStyle18.copyWith(color: AppColors.colorWite),
+          style: AppTextStyle.textStyle26.copyWith(color: AppColors.colorBlack),
         ),
       ),
     );

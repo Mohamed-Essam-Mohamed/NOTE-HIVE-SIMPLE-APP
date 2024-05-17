@@ -1,8 +1,13 @@
+import 'package:app_note_local/src/constant/app_const_hive.dart';
+import 'package:app_note_local/src/feature/edit_task/view/edittask_screen.dart';
 import 'package:app_note_local/src/feature/home/view/home_screen.dart';
 import 'package:app_note_local/src/utils/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:hive_flutter/adapters.dart';
 
-void main() {
+void main() async {
+  await Hive.initFlutter();
+  await Hive.openBox(openBox);
   runApp(NoteApp());
 }
 
@@ -17,6 +22,7 @@ class NoteApp extends StatelessWidget {
       initialRoute: HomeScreen.routeName,
       routes: {
         HomeScreen.routeName: (context) => const HomeScreen(),
+        EditTaskScreen.routeName: (context) => EditTaskScreen(),
       },
     );
   }

@@ -1,3 +1,4 @@
+import 'package:app_note_local/src/feature/add_task/view_model/addtask_view_model_cubit.dart';
 import 'package:app_note_local/src/helper/size_gap.dart';
 import 'package:app_note_local/src/utils/app_colors.dart';
 import 'package:app_note_local/src/utils/app_textstyles.dart';
@@ -6,8 +7,7 @@ import 'package:app_note_local/src/widget/app_textform.dart';
 import 'package:flutter/material.dart';
 
 class AddTaskScreen extends StatelessWidget {
-  final TextEditingController titleController = TextEditingController();
-  final TextEditingController descriptionController = TextEditingController();
+  AddTaskViewModelCubit viewModel = AddTaskViewModelCubit();
   AddTaskScreen({super.key});
   @override
   Widget build(BuildContext context) {
@@ -35,14 +35,14 @@ class AddTaskScreen extends StatelessWidget {
                   vertical(20),
                   AppTextForm(
                     label: "Title",
-                    controller: titleController,
+                    controller: viewModel.titleController,
                     maxLines: 1,
                     myValidator: (text) {},
                   ),
                   vertical(2),
                   AppTextForm(
                     label: "Description",
-                    controller: descriptionController,
+                    controller: viewModel.descriptionController,
                     maxLines: 4,
                     myValidator: (text) {},
                   ),
