@@ -26,10 +26,11 @@
 
 
 ## 🎥 Video
+https://github.com/Mohamed-Essam-Mohamed/NOTE-HIVE-APP/assets/152906492/8e93d6a4-9518-4496-a33c-7f02683d4ee9
+
 
 
 ## 🛠 Dependencies
-
 ```pubspec.yaml
   cupertino_icons: ^1.0.6
   flutter_bloc: ^8.1.5
