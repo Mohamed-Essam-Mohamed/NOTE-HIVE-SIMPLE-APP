@@ -8,10 +8,10 @@ typedef Validator = String? Function(String?);
 class AppTextForm extends StatefulWidget {
   final String label;
 
-  bool obscureText;
-  int maxLines;
-  TextEditingController controller;
-  Validator myValidator;
+  final bool obscureText;
+  final int maxLines;
+  final TextEditingController controller;
+  final Validator myValidator;
 
   AppTextForm(
       {required this.label,

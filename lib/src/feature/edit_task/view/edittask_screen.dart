@@ -43,9 +43,8 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
             ),
             child: IconButton(
               onPressed: () {
-                args.title = titleController.text ?? args.title;
-                args.description =
-                    descriptionController.text ?? args.description;
+                args.title = titleController.text;
+                args.description = descriptionController.text;
                 args.save();
                 Navigator.of(context)
                     .pushReplacementNamed(HomeScreen.routeName);
