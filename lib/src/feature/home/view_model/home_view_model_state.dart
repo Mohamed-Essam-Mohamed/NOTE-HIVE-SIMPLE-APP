@@ -1,4 +1,4 @@
-import 'package:app_note_local/src/model/model_note.dart';
+import '../../../model/model_note.dart';
 
 abstract class HomeViewModelState {}
 

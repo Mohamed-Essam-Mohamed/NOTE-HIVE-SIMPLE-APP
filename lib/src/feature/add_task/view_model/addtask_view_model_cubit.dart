@@ -1,6 +1,6 @@
-import 'package:app_note_local/src/constant/app_const_hive.dart';
-import 'package:app_note_local/src/model/model_note.dart';
-import 'package:app_note_local/src/feature/add_task/view_model/addtask_view_model_state.dart';
+import '../../../constant/app_const_hive.dart';
+import '../../../model/model_note.dart';
+import 'addtask_view_model_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

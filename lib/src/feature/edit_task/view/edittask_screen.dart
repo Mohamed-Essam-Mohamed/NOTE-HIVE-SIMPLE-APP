@@ -1,9 +1,10 @@
-import 'package:app_note_local/src/model/model_note.dart';
-import 'package:app_note_local/src/feature/home/view/home_screen.dart';
-import 'package:app_note_local/src/helper/size_gap.dart';
-import 'package:app_note_local/src/utils/app_textstyles.dart';
-import 'package:app_note_local/src/widget/app_textform.dart';
 import 'package:flutter/material.dart';
+
+import '../../../helper/size_gap.dart';
+import '../../../model/model_note.dart';
+import '../../../utils/app_textstyles.dart';
+import '../../../widget/app_textform.dart';
+import '../../home/view/home_screen.dart';
 
 class EditTaskScreen extends StatefulWidget {
   static const String routeName = "edit_task_screen";

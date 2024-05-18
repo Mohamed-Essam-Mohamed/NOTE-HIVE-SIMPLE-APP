@@ -1,12 +1,12 @@
-import 'package:app_note_local/src/feature/add_task/view_model/addtask_view_model_cubit.dart';
-import 'package:app_note_local/src/feature/add_task/view_model/addtask_view_model_state.dart';
-import 'package:app_note_local/src/feature/home/view/home_screen.dart';
-import 'package:app_note_local/src/feature/home/view_model/home_view_model_cubit.dart';
-import 'package:app_note_local/src/helper/size_gap.dart';
-import 'package:app_note_local/src/utils/app_colors.dart';
-import 'package:app_note_local/src/utils/app_textstyles.dart';
-import 'package:app_note_local/src/widget/app_material_button.dart';
-import 'package:app_note_local/src/widget/app_textform.dart';
+import '../view_model/addtask_view_model_cubit.dart';
+import '../view_model/addtask_view_model_state.dart';
+import '../../home/view/home_screen.dart';
+import '../../home/view_model/home_view_model_cubit.dart';
+import '../../../helper/size_gap.dart';
+import '../../../utils/app_colors.dart';
+import '../../../utils/app_textstyles.dart';
+import '../../../widget/app_material_button.dart';
+import '../../../widget/app_textform.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

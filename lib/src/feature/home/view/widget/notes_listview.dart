@@ -1,7 +1,7 @@
-import 'package:app_note_local/src/feature/edit_task/view/edittask_screen.dart';
-import 'package:app_note_local/src/feature/home/view/widget/note_item.dart';
-import 'package:app_note_local/src/feature/home/view_model/home_view_model_cubit.dart';
-import 'package:app_note_local/src/feature/home/view_model/home_view_model_state.dart';
+import '../../../edit_task/view/edittask_screen.dart';
+import 'note_item.dart';
+import '../../view_model/home_view_model_cubit.dart';
+import '../../view_model/home_view_model_state.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 

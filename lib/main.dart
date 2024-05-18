@@ -1,8 +1,8 @@
-import 'package:app_note_local/src/constant/app_const_hive.dart';
-import 'package:app_note_local/src/model/model_note.dart';
-import 'package:app_note_local/src/feature/edit_task/view/edittask_screen.dart';
-import 'package:app_note_local/src/feature/home/view/home_screen.dart';
-import 'package:app_note_local/src/utils/app_theme.dart';
+import 'src/constant/app_const_hive.dart';
+import 'src/model/model_note.dart';
+import 'src/feature/edit_task/view/edittask_screen.dart';
+import 'src/feature/home/view/home_screen.dart';
+import 'src/utils/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/adapters.dart';
 
