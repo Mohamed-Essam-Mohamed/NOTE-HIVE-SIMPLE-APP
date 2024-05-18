@@ -1,16 +1,52 @@
-# app_note_local
+# Note App
 
-A new Flutter project.
 
-## Getting Started
+## 🚀 Getting Started
 
-This project is a starting point for a Flutter application.
+- A simple application through which you can record your daily tasks without the internet.
+- Can add, edit, delete, and choose the right color for the task.
+- clean code by using the design pattern MVVM(cubit).
+  
+## 🤳 Screens
 
-A few resources to get you started if this is your first Flutter project:
+- **ADD Task:** A task can be added, a title and a description of this task can be added, And you can choose your favorite color from six colors. 
+- **Home Screen:** View all the tasks added later and clear the task after completion.
+- **Eidet Screen:** View all the tasks that were added later and you can clear the task after completion.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+## 📁 Files Structure
+![note-app-file-structure](https://github.com/Mohamed-Essam-Mohamed/NOTE-HIVE-APP/assets/152906492/b319ecd1-4178-4def-9f4d-4152556f15f3)
+
+
+## 📱 UI
+
+
+
+## 🎥 Video
+
+
+## 🛠 Dependencies
+
+```pubspec.yaml
+  cupertino_icons: ^1.0.6
+  flutter_bloc: ^8.1.5
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  intl: ^0.19.0
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.10
+
+```
+
+
+- Contributions are welcome 💜
+- If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
+
