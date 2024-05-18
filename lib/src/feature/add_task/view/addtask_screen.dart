@@ -1,7 +1,8 @@
+import 'package:app_note_local/src/constant/app_string_constant.dart';
+
 import '../view_model/addtask_view_model_cubit.dart';
 import '../view_model/addtask_view_model_state.dart';
 import '../../home/view/home_screen.dart';
-import '../../home/view_model/home_view_model_cubit.dart';
 import '../../../helper/size_gap.dart';
 import '../../../utils/app_colors.dart';
 import '../../../utils/app_textstyles.dart';
@@ -38,7 +39,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                   content: Row(
                     children: [
                       Text(
-                        "Task Added",
+                        taskAdded,
                         style: AppTextStyle.textStyle18,
                       ),
                       Spacer(),
@@ -59,7 +60,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
               ),
               vertical(10),
               Text(
-                "ADD Task",
+                addTask,
                 style: AppTextStyle.textStyle26.copyWith(
                   color: AppColors.colorBlue,
                 ),
@@ -73,24 +74,24 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                       children: [
                         vertical(20),
                         AppTextForm(
-                          label: "Title",
+                          label: title,
                           controller: viewModel.titleController,
                           maxLines: 1,
                           myValidator: (text) {
                             if (text == null || text.isEmpty) {
-                              return "Title can't be empty";
+                              return titleEmpty;
                             }
                             return null;
                           },
                         ),
                         vertical(2),
                         AppTextForm(
-                          label: "Description",
+                          label: description,
                           controller: viewModel.descriptionController,
                           maxLines: 4,
                           myValidator: (text) {
                             if (text == null || text.isEmpty) {
-                              return "Description can't be empty";
+                              return descriptionEmpty;
                             }
                             return null;
                           },
@@ -105,7 +106,7 @@ class _AddTaskScreenState extends State<AddTaskScreen> {
                 onPressed: () {
                   viewModel.addTask();
                 },
-                title: "ADD",
+                title: add,
               ),
               vertical(20),
             ],

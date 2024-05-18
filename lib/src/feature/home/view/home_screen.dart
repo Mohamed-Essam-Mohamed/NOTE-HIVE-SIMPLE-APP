@@ -1,5 +1,6 @@
 // ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
 
+import 'package:app_note_local/src/constant/app_string_constant.dart';
 import 'package:app_note_local/src/feature/add_task/view/addtask_screen.dart';
 import 'package:app_note_local/src/feature/home/view/widget/notes_listview.dart';
 import 'package:app_note_local/src/utils/app_colors.dart';
@@ -15,7 +16,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Notes",
+          notes,
           style: AppTextStyle.textStyle28,
         ),
         actions: [

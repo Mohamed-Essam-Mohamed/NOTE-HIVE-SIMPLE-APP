@@ -1,3 +1,4 @@
+import 'package:app_note_local/src/constant/app_string_constant.dart';
 import 'package:flutter/material.dart';
 
 import '../../../helper/size_gap.dart';
@@ -29,7 +30,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          "Edit Task",
+          editTask,
           style: AppTextStyle.textStyle28,
         ),
         actions: [
@@ -66,7 +67,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
               myValidator: (text) {
                 return null;
               },
-              label: "Title",
+              label: title,
               controller: titleController,
               maxLines: 1,
             ),
@@ -75,7 +76,7 @@ class _EditTaskScreenState extends State<EditTaskScreen> {
               myValidator: (text) {
                 return null;
               },
-              label: "Description",
+              label: description,
               controller: descriptionController,
               maxLines: 5,
             ),
