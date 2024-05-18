@@ -1,17 +1,24 @@
+import 'package:app_note_local/src/model/model_note.dart';
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../../../../utils/app_colors.dart';
 import '../../../../utils/app_textstyles.dart';
 
 class NoteItem extends StatelessWidget {
+  final ModelNotes notes;
+  final void Function()? onPressedDelete;
+
   const NoteItem({
     super.key,
+    required this.notes,
+    required this.onPressedDelete,
   });
 
   @override
   Widget build(BuildContext context) {
     return Card(
-      color: AppColors.colorYellow,
+      color: Color(notes.color),
       shape: RoundedRectangleBorder(
         borderRadius: BorderRadius.circular(15),
       ),
@@ -22,19 +29,19 @@ class NoteItem extends StatelessWidget {
           children: [
             ListTile(
               title: Text(
-                "Flutter tips",
+                notes.title,
                 style: AppTextStyle.textStyle26,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
               ),
               subtitle: Text(
-                "Tips and tricks for Flutter development ",
+                notes.description,
                 maxLines: 3,
                 overflow: TextOverflow.ellipsis,
                 style: AppTextStyle.textStyle18,
               ),
               trailing: IconButton(
-                onPressed: () {},
+                onPressed: onPressedDelete,
                 icon: Icon(
                   Icons.delete,
                   color: AppColors.colorRed,
@@ -42,7 +49,11 @@ class NoteItem extends StatelessWidget {
                 ),
               ),
             ),
-            Text("16/01/2023", style: AppTextStyle.textStyle18),
+            Text(
+                DateFormat('yyyy/MM/dd – kk:mm').format(
+                  DateTime.parse(notes.date),
+                ),
+                style: AppTextStyle.textStyle18),
           ],
         ),
       ),

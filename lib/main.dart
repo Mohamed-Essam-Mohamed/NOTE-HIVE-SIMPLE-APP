@@ -1,4 +1,5 @@
 import 'package:app_note_local/src/constant/app_const_hive.dart';
+import 'package:app_note_local/src/model/model_note.dart';
 import 'package:app_note_local/src/feature/edit_task/view/edittask_screen.dart';
 import 'package:app_note_local/src/feature/home/view/home_screen.dart';
 import 'package:app_note_local/src/utils/app_theme.dart';
@@ -7,7 +8,9 @@ import 'package:hive_flutter/adapters.dart';
 
 void main() async {
   await Hive.initFlutter();
-  await Hive.openBox(openBox);
+  Hive.registerAdapter(ModelNotesAdapter());
+
+  await Hive.openBox<ModelNotes>(openBox);
   runApp(NoteApp());
 }
 
